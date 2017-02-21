@@ -1,0 +1,13 @@
+---
+blockchain_root: https://blockchain.info
+xpub: xpub6C7GCqNBhbbdNnDNWRvpPA8tLRCNRe1yLeEjeEgLcPQA6B61jW4qmGgk9qTWa3cxoyz4tDJpgaSc6RRnxG6xzMfNe2n5PcM6tFArzQejhMY
+api_key: 593f7919-5113-4681-93f3-6bbf9df8df56
+secret: too_many_secrets
+db:
+  path: /db/ruby-demo.db
+app:
+  static_path: ../resources/static
+  base_url: http://ruby-demo.dev:9393/
+  invoice_id: 9001
+  price_in_usd: 0.15
+  product_url: 'nutbolt.jpg'

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :transactions
+  resources :users
+  get 'address', to: 'bitcoin#generate_address'
   post 'register', to: 'authentications#register'
   post 'login', to: 'authentications#login'
 

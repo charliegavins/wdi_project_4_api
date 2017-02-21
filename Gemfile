@@ -13,6 +13,10 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
+gem 'config', '~> 1.0'
+gem 'blockchain', '~> 1.1', '>= 1.1.1'
+gem 'shotgun', '~> 0.9.1'
+gem 'unirest'
 
 group :development, :test do
   gem 'byebug', platform: :mri
