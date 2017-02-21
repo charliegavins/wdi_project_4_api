@@ -1,10 +1,7 @@
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: [:show, :update, :destroy]
 
-  def ngrok
-    puts params
-    render json: { status: 200 }
-  end
+
 
   # GET /transactions
   def index

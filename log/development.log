@@ -6112,3 +6112,149 @@ Filter chain halted as :authenticate_user! rendered or redirected
 Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/" for 45.56.79.5 at 2017-02-21 20:48:06 +0000
+Processing by TransactionsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>21, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.10000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.10000000", "txid"=>"c954a3886717e4e2f44dd9123ed13026200138e18e565d30b861283d3862a1b8", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948, "transaction"=>{"created_at"=>1487708948}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 20:48:39 +0000
+Processing by TransactionsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>22, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.10000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.10000000", "txid"=>"c954a3886717e4e2f44dd9123ed13026200138e18e565d30b861283d3862a1b8", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948, "transaction"=>{"created_at"=>1487708948}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 20:49:33 +0000
+Processing by TransactionsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>23, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.10000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.10000000", "txid"=>"c954a3886717e4e2f44dd9123ed13026200138e18e565d30b861283d3862a1b8", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948, "transaction"=>{"created_at"=>1487708948}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:38:25 +0000
+Processing by TransactionsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>55, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89885280", "amount_received"=>"49.89743760", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487708952, "transaction"=>{"created_at"=>1487708952}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:42:59 +0000
+Processing by TransactionsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>56, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89885280", "amount_received"=>"49.89743760", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487708952, "transaction"=>{"created_at"=>1487708952}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:04 +0000
+Processing by TransactionsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>57, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89885280", "amount_received"=>"49.89743760", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487708952, "transaction"=>{"created_at"=>1487708952}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.93ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:57 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>58, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89885280", "amount_received"=>"49.89743760", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487708952, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>58, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89885280", "amount_received"=>"49.89743760", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487708952}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:58 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>50, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.10000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.10000000", "txid"=>"c954a3886717e4e2f44dd9123ed13026200138e18e565d30b861283d3862a1b8", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>50, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.10000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.10000000", "txid"=>"c954a3886717e4e2f44dd9123ed13026200138e18e565d30b861283d3862a1b8", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:58 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>7, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"6a05997fe7f6d43a2bf1e6d94915f9896da887aff26e4ae4b7f85f6c20ed6706", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>7, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"6a05997fe7f6d43a2bf1e6d94915f9896da887aff26e4ae4b7f85f6c20ed6706", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:58 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>4, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.10073200", "amount_sent"=>"50.01000000", "amount_received"=>"49.90926800", "txid"=>"c954a3886717e4e2f44dd9123ed13026200138e18e565d30b861283d3862a1b8", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>4, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.10073200", "amount_sent"=>"50.01000000", "amount_received"=>"49.90926800", "txid"=>"c954a3886717e4e2f44dd9123ed13026200138e18e565d30b861283d3862a1b8", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:58 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>3, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.01041520", "amount_sent"=>"49.90926800", "amount_received"=>"49.89885280", "txid"=>"6a05997fe7f6d43a2bf1e6d94915f9896da887aff26e4ae4b7f85f6c20ed6706", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>3, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.01041520", "amount_sent"=>"49.90926800", "amount_received"=>"49.89885280", "txid"=>"6a05997fe7f6d43a2bf1e6d94915f9896da887aff26e4ae4b7f85f6c20ed6706", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487708948}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:58 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487708952, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487708952}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:59 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89743760", "amount_received"=>"49.89602240", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487709363, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89743760", "amount_received"=>"49.89602240", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487709363}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:59 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487709363, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487709363}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:59 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89743760", "amount_received"=>"49.89602240", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487710119, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89743760", "amount_received"=>"49.89602240", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487710119}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:59 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487710119, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487710119}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:59 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89885280", "amount_received"=>"49.89743760", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711330, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89885280", "amount_received"=>"49.89743760", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711330}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:56:59 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711330, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"76131515d7ee2f02cc2690f248868c1a6e27ea952d6e07a22193d52aa62d4972", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711330}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:57:00 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89743760", "amount_received"=>"49.89602240", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711411, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00141520", "amount_sent"=>"49.89743760", "amount_received"=>"49.89602240", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711411}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 21:57:00 +0000
+Processing by AuthenticationsController#ngrok as TEXT
+  Parameters: {"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711411, "authentication"=>{"notification_id"=>"eb30dba8f4722d86ce3f5c2a", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"a69ca9ba51b7a24f27c053109c8a202aa64c570758c798b920f3c67906c753cd", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487711411}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
