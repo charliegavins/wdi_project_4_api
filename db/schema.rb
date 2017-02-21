@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20170218132704) do
     t.string   "payment_status"
     t.string   "recipient_url"
     t.string   "recipient_name"
+    t.string   "recipient_img"
+    t.string   "wallet_address"
     t.integer  "user_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false

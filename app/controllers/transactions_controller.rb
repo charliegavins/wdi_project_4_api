@@ -1,6 +1,11 @@
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: [:show, :update, :destroy]
 
+  def ngrok
+    puts params
+    render json: { status: 200 }
+  end
+
   # GET /transactions
   def index
     @transactions = Transaction.all
@@ -43,6 +48,7 @@ class TransactionsController < ApplicationController
     def set_transaction
       @transaction = Transaction.find(params[:id])
     end
+
 
     # Only allow a trusted parameter "white list" through.
     def transaction_params
