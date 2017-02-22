@@ -1,5 +1,6 @@
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: [:show, :update, :destroy]
+  skip_before_action :authenticate_user!
 
   # GET /transactions
   def index
@@ -36,6 +37,22 @@ class TransactionsController < ApplicationController
   # DELETE /transactions/1
   def destroy
     @transaction.destroy
+  end
+
+  def webhooktest
+    render json: { status: 200 }
+  end
+
+  def webhook
+    wallet_address = params[:data][:address]
+    p wallet_address
+    @transaction = Transaction.where(wallet_address: wallet_address).last
+    if @transaction
+      @transaction.update!(payment_status: "complete")
+      render json: { status: 200 }
+    else
+      render json: { status: 404 }
+    end
   end
 
   private

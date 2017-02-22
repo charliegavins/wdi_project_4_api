@@ -1,17 +1,23 @@
 class Transaction < ApplicationRecord
   belongs_to :user, optional: true
-  before_save :get_address
-  before_save :generate_qr_url
+  before_create :get_address_then_generate_gr_url
+
+  after_update_commit do
+    ActionCable.server.broadcast "transactions_channel_#{self.id}", payment_status: self.payment_status
+  end
 
   private
 
-    def get_address
-      response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=37be-fd8d-5632-ee22"
+    def get_address_then_generate_gr_url
+      # response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=37be-fd8d-5632-ee22"
+      #
+      # # puts response.body
+      # if response.body["data"]["address"]
+      #   self.wallet_address = response.body["data"]["address"]
+      # end
 
-      # puts response.body
-      if response.body["data"]["address"]
-        self.wallet_address = response.body["data"]["address"]
-      end
+      self.wallet_address = "2N3JwUCfwZcADNJjjQ6hPrMTTzSEAvHNqke"
+      generate_qr_url
     end
 
     def generate_qr_url
