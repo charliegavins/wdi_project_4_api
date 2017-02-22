@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: [:show, :update, :destroy]
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: [:webhook]
 
   # GET /transactions
   def index
@@ -16,7 +16,8 @@ class TransactionsController < ApplicationController
 
   # POST /transactions
   def create
-    @transaction = @current_user.transactions.new(transaction_params)
+    @transaction = Transaction.new(transaction_params)
+    # @transaction = @current_user.transactions.new(transaction_params)
 
     if @transaction.save
       render json: @transaction, status: :created, location: @transaction

@@ -9,6 +9,7 @@ class Transaction < ApplicationRecord
   private
 
     def get_address_then_generate_gr_url
+      p 'ping'
       # response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=37be-fd8d-5632-ee22"
       #
       # # puts response.body
@@ -21,6 +22,7 @@ class Transaction < ApplicationRecord
     end
 
     def generate_qr_url
+      p 'ping'
       self.qr_image_url = "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:#{self.wallet_address}?amount=#{self.amount}%26label=tipjar.com%26message=#{self.message}"
     end
 end
