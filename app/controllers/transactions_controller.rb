@@ -1,8 +1,6 @@
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: [:show, :update, :destroy]
 
-
-
   # GET /transactions
   def index
     @transactions = Transaction.all
@@ -17,7 +15,7 @@ class TransactionsController < ApplicationController
 
   # POST /transactions
   def create
-    @transaction = Transaction.new(transaction_params)
+    @transaction = @current_user.transactions.new(transaction_params)
 
     if @transaction.save
       render json: @transaction, status: :created, location: @transaction
@@ -46,9 +44,8 @@ class TransactionsController < ApplicationController
       @transaction = Transaction.find(params[:id])
     end
 
-
     # Only allow a trusted parameter "white list" through.
     def transaction_params
-      params.require(:transaction).permit(:message, :amount, :payment_status, :recipient_url, :recipient_name, :user_id)
+      params.require(:transaction).permit(:message, :amount, :payment_status, :recipient_url, :recipient_name, :recipient_img, :user_id, :qr_image_url)
     end
 end

@@ -7212,3 +7212,280 @@ Unpermitted parameter: recipient_img
 Completed 201 Created in 1250ms (Views: 2.5ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-02-22 12:30:21 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (6.5ms)
+Completed 200 OK in 18ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-22 12:30:36 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (6.9ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-02-22 12:30:36 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-02-22 12:30:39 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-22 12:44:18 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (51.4ms)
+Completed 200 OK in 70ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-22 12:45:12 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (14.2ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-22 12:47:18 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (137.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tip_jar_development"[0m
+  [1m[35m (125.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tip_jar_test"[0m
+  [1m[35m (365.2ms)[0m  [1m[35mCREATE DATABASE "tip_jar_development" ENCODING = 'unicode'[0m
+  [1m[35m (258.4ms)[0m  [1m[35mCREATE DATABASE "tip_jar_test" ENCODING = 'unicode'[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4326357195679954785);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20170218132653)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password_digest" character varying, "first_name" character varying, "last_name" character varying, "user_level" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170218132653"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTransactions (20170218132704)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" serial primary key, "message" text, "amount" integer, "payment_status" character varying, "recipient_url" character varying, "recipient_name" character varying, "recipient_img" character varying, "wallet_address" character varying, "qr_image_url" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_77364e6416"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_transactions_on_user_id" ON "transactions"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170218132704"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-22 13:16:40 UTC], ["updated_at", 2017-02-22 13:16:40 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4326357195679954785)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user1@users.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "user1@users.com"], ["password_digest", "$2a$10$h.RcRtz4QXonYah63aFgeekysFtAucVZF73dYc3WOTEeekR2db4he"], ["first_name", "Alan"], ["last_name", "Smith"], ["user_level", false], ["created_at", 2017-02-22 13:16:41 UTC], ["updated_at", 2017-02-22 13:16:41 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user12@users.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "user12@users.com"], ["password_digest", "$2a$10$sp5sMvfBCkcbA4cU2oKe..azqZ.zTdsAipP/6IFyhJZIurnUu7cmW"], ["first_name", "Becky"], ["last_name", "Vantra"], ["user_level", false], ["created_at", 2017-02-22 13:16:41 UTC], ["updated_at", 2017-02-22 13:16:41 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user3@users.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "user3@users.com"], ["password_digest", "$2a$10$JiR6PUxweZYw86v4QhfPG.WAoPd.9qSDdLaWXXy1DK.ejIxeKGK0e"], ["first_name", "Emily"], ["last_name", "Ecclestone"], ["user_level", false], ["created_at", 2017-02-22 13:16:41 UTC], ["updated_at", 2017-02-22 13:16:41 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "charlie.gavins@neonseed.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "charlie.gavins@neonseed.com"], ["password_digest", "$2a$10$E7L9FnTb8iEY1FxiWmF8WerWt2rScVsXGdPJ7AHzWKR90/p535HZ2"], ["first_name", "Charlie"], ["last_name", "Gavins"], ["user_level", true], ["created_at", 2017-02-22 13:16:41 UTC], ["updated_at", 2017-02-22 13:16:41 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (126.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tip_jar_development"[0m
+  [1m[35m (119.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tip_jar_test"[0m
+  [1m[35m (344.0ms)[0m  [1m[35mCREATE DATABASE "tip_jar_development" ENCODING = 'unicode'[0m
+  [1m[35m (258.5ms)[0m  [1m[35mCREATE DATABASE "tip_jar_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4326357195679954785);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20170218132653)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password_digest" character varying, "first_name" character varying, "last_name" character varying, "user_level" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170218132653"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTransactions (20170218132704)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" serial primary key, "message" text, "amount" integer, "payment_status" character varying, "recipient_url" character varying, "recipient_name" character varying, "recipient_img" character varying, "wallet_address" character varying, "qr_image_url" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_77364e6416"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_transactions_on_user_id" ON "transactions"  ("user_id")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170218132704"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-22 13:17:00 UTC], ["updated_at", 2017-02-22 13:17:00 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4326357195679954785)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user1@users.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "user1@users.com"], ["password_digest", "$2a$10$NxX45i4WhZ5d5T.mHy4zBuOFMSp.oi8nNWp2kdCvtH/AE64FSEor6"], ["first_name", "Alan"], ["last_name", "Smith"], ["user_level", false], ["created_at", 2017-02-22 13:17:00 UTC], ["updated_at", 2017-02-22 13:17:00 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user12@users.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "user12@users.com"], ["password_digest", "$2a$10$xg4qg5bxiBXF16U5eP/DBu8MFwB/N4KMJm759JfDs1l9zqzKn7EcC"], ["first_name", "Becky"], ["last_name", "Vantra"], ["user_level", false], ["created_at", 2017-02-22 13:17:00 UTC], ["updated_at", 2017-02-22 13:17:00 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user3@users.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "user3@users.com"], ["password_digest", "$2a$10$HrOcrkvM1ar15oJkYJns8OO8x5HdpLM541iKaMop1/n/PJQLtTlyC"], ["first_name", "Emily"], ["last_name", "Ecclestone"], ["user_level", false], ["created_at", 2017-02-22 13:17:00 UTC], ["updated_at", 2017-02-22 13:17:00 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "charlie.gavins@neonseed.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "first_name", "last_name", "user_level", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "charlie.gavins@neonseed.com"], ["password_digest", "$2a$10$ZulR.InDA7WZz5t/jLQgPOE3LHL9YzHYkxTEvuVrfI.SHYJjY/iQG"], ["first_name", "Charlie"], ["last_name", "Gavins"], ["user_level", true], ["created_at", 2017-02-22 13:17:00 UTC], ["updated_at", 2017-02-22 13:17:00 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["message", "I love your work"], ["amount", 0], ["payment_status", "recieved"], ["recipient_url", "https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V"], ["recipient_name", "Ed Sheeran"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=I love your work"], ["created_at", 2017-02-22 13:17:01 UTC], ["updated_at", 2017-02-22 13:17:01 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["message", "Keep it up dude!"], ["amount", 0], ["payment_status", "recieved"], ["recipient_url", "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"], ["recipient_name", "Adele"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=Keep it up dude!"], ["created_at", 2017-02-22 13:17:01 UTC], ["updated_at", 2017-02-22 13:17:01 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["message", "great tunes"], ["amount", 0], ["payment_status", "recieved"], ["recipient_url", "https://open.spotify.com/artist/3OsRAKCvk37zwYcnzRf5XF"], ["recipient_name", "Moby"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=great tunes"], ["created_at", 2017-02-22 13:17:04 UTC], ["updated_at", 2017-02-22 13:17:04 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "transactions" SET "user_id" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["user_id", 1], ["updated_at", 2017-02-22 13:17:05 UTC], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "transactions" SET "user_id" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["user_id", 2], ["updated_at", 2017-02-22 13:17:05 UTC], ["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "transactions" SET "user_id" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["user_id", 3], ["updated_at", 2017-02-22 13:17:05 UTC], ["id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 13:18:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "payment_status"=>"pending", "amount"=>"0.01", "message"=>"Something short", "transaction"=>{"message"=>"Something short", "amount"=>"0.01", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["message", "Something short"], ["amount", 0], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=Something short"], ["created_at", 2017-02-22 13:18:56 UTC], ["updated_at", 2017-02-22 13:18:56 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (12.76ms)
+Completed 201 Created in 798ms (Views: 50.0ms | ActiveRecord: 15.8ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 13:19:34 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "payment_status"=>"pending", "amount"=>"0.01", "message"=>"Something", "transaction"=>{"message"=>"Something", "amount"=>"0.01", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["message", "Something"], ["amount", 0], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=Something"], ["created_at", 2017-02-22 13:19:34 UTC], ["updated_at", 2017-02-22 13:19:34 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 201 Created in 259ms (Views: 1.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 13:20:35 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "payment_status"=>"pending", "amount"=>"0.01", "message"=>"Something", "transaction"=>{"message"=>"Something", "amount"=>"0.01", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["message", "Something"], ["amount", 0], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=Something"], ["created_at", 2017-02-22 13:20:35 UTC], ["updated_at", 2017-02-22 13:20:35 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 201 Created in 398ms (Views: 1.5ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 13:21:09 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "payment_status"=>"pending", "amount"=>"0.01", "message"=>"Something", "transaction"=>{"message"=>"Something", "amount"=>"0.01", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["message", "Something"], ["amount", 0], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=Something"], ["created_at", 2017-02-22 13:21:10 UTC], ["updated_at", 2017-02-22 13:21:10 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 201 Created in 384ms (Views: 1.5ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 13:21:36 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "payment_status"=>"pending", "amount"=>"0.01", "message"=>"asassa", "transaction"=>{"message"=>"asassa", "amount"=>"0.01", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["message", "asassa"], ["amount", 0], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=asassa"], ["created_at", 2017-02-22 13:21:37 UTC], ["updated_at", 2017-02-22 13:21:37 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 201 Created in 949ms (Views: 1.4ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 13:23:33 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "payment_status"=>"pending", "amount"=>"0.1", "message"=>"aaaaa", "transaction"=>{"message"=>"aaaaa", "amount"=>"0.1", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["message", "aaaaa"], ["amount", 0], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=aaaaa"], ["created_at", 2017-02-22 13:23:33 UTC], ["updated_at", 2017-02-22 13:23:33 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.63ms)
+Completed 201 Created in 276ms (Views: 1.7ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 13:24:03 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "payment_status"=>"pending", "amount"=>"0.01", "message"=>"aaaaaa", "transaction"=>{"message"=>"aaaaaa", "amount"=>"0.01", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["message", "aaaaaa"], ["amount", 0], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:?amount=${amount}%26label=tipjar.com%26message=aaaaaa"], ["created_at", 2017-02-22 13:24:03 UTC], ["updated_at", 2017-02-22 13:24:03 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 201 Created in 285ms (Views: 1.9ms | ActiveRecord: 2.2ms)
+
+
