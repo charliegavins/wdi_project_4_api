@@ -1,9 +1,8 @@
 class BitcoinController < ApplicationController
   skip_before_action :authenticate_user!
 
-
     def ngrok
-      puts params
+      puts params[:Parameters]
       render json: { status: 200 }
     end
 

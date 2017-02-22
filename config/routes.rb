@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post '/', to: 'bitcoin#ngrok'
   post 'register', to: 'authentications#register'
   post 'login', to: 'authentications#login'
+  post '/cable', to: 'websocket#initialize_session'
 
 
 

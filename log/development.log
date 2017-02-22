@@ -6265,3 +6265,950 @@ Processing by BitcoinController#ngrok as HTML
 Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/" for 45.79.6.19 at 2017-02-21 23:47:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BitcoinController#ngrok as HTML
+  Parameters: {"type"=>"ping", "bitcoin"=>{"type"=>"ping"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 23:55:40 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.01048440", "amount_sent"=>"0.10000000", "amount_received"=>"0.08951560", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721340, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.01048440", "amount_sent"=>"0.10000000", "amount_received"=>"0.08951560", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721340}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 23:55:40 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721340, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721340}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 23:57:21 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721441, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721441}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 23:57:21 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.00148440", "amount_sent"=>"0.01000000", "amount_received"=>"0.00851560", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721441, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.00148440", "amount_sent"=>"0.01000000", "amount_received"=>"0.00851560", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721441}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-21 23:59:18 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-21 23:59:18 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721558, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721558}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89602240", "amount_received"=>"49.89453800", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721558, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89602240", "amount_received"=>"49.89453800", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721558}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:00:52 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:00:52 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89453800", "amount_received"=>"49.89305360", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721651, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89453800", "amount_received"=>"49.89305360", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721651}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Processing by BitcoinController#ngrok as TEXT
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721651, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721651}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:05:12 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89305360", "amount_received"=>"49.89156920", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721907, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89305360", "amount_received"=>"49.89156920", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721907}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:05:12 +0000
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721907, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721907}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:06:16 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89156920", "amount_received"=>"49.89008480", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721976, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89156920", "amount_received"=>"49.89008480", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721976}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:06:16 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721976, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487721976}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:07:53 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:07:53 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:08:23 +0000
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:08:53 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:09:09 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:09:09 +0000
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:09:18 +0000
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:09:35 +0000
+  
+AbstractController::ActionNotFound (The action 'ngrok' could not be found for BitcoinController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:09:57 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:09:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BitcoinController#ngrok as TEXT
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>5, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>5, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>5, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>5, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+  
+NoMethodError (undefined method `Parameters' for #<ActionController::Parameters:0x007fa907222560>
+Did you mean?  parameters):
+NoMethodError (undefined method `Parameters' for #<ActionController::Parameters:0x007fa90720ba90>
+Did you mean?  parameters):
+  
+app/controllers/bitcoin_controller.rb:6:in `ngrok'
+  
+app/controllers/bitcoin_controller.rb:6:in `ngrok'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:10:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>6, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>6, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `parameters' called for #<ActionController::Parameters:0x007fd184ab1d98>):
+  
+app/controllers/bitcoin_controller.rb:6:in `ngrok'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:11:08 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>7, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>7, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `parameters' called for #<ActionController::Parameters:0x007fd1848c0d90>):
+  
+app/controllers/bitcoin_controller.rb:6:in `ngrok'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:11:22 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>8, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>8, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `parameters' called for #<ActionController::Parameters:0x007fd1816a5130>):
+  
+app/controllers/bitcoin_controller.rb:6:in `ngrok'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:11:22 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>6, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>6, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (protected method `parameters' called for #<ActionController::Parameters:0x007fd181303888>):
+  
+app/controllers/bitcoin_controller.rb:6:in `ngrok'
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:11:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>7, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>7, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:11:47 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>9, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>9, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722073}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:11:47 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88860040", "amount_received"=>"49.88711600", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722149, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88860040", "amount_received"=>"49.88711600", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722149}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:11:47 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722149, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487722149}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89602240", "amount_received"=>"49.89453800", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89602240", "amount_received"=>"49.89453800", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89305360", "amount_received"=>"49.89156920", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89305360", "amount_received"=>"49.89156920", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 33ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Processing by BitcoinController#ngrok as TEXT
+Processing by BitcoinController#ngrok as TEXT
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89453800", "amount_received"=>"49.89305360", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89453800", "amount_received"=>"49.89305360", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.01048440", "amount_sent"=>"0.10000000", "amount_received"=>"0.08951560", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.01048440", "amount_sent"=>"0.10000000", "amount_received"=>"0.08951560", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.00148440", "amount_sent"=>"0.01000000", "amount_received"=>"0.00851560", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.00148440", "amount_sent"=>"0.01000000", "amount_received"=>"0.00851560", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:43 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89156920", "amount_received"=>"49.89008480", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89156920", "amount_received"=>"49.89008480", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Processing by BitcoinController#ngrok as TEXT
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:44 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:44 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:44 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:13:44 +0000
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Processing by BitcoinController#ngrok as TEXT
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88860040", "amount_received"=>"49.88711600", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88860040", "amount_received"=>"49.88711600", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487722423}}
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:39:44 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88711600", "amount_received"=>"49.88563160", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487723984, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88711600", "amount_received"=>"49.88563160", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487723984}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.89ms)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:39:44 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487723984, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487723984}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.00148440", "amount_sent"=>"0.01000000", "amount_received"=>"0.00851560", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.00148440", "amount_sent"=>"0.01000000", "amount_received"=>"0.00851560", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"795c0ab844c2cc3b4b9a167e6ef765a978a63272af3a4fae3e77ab689d8b0a5f", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.01048440", "amount_sent"=>"0.10000000", "amount_received"=>"0.08951560", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"-0.01048440", "amount_sent"=>"0.10000000", "amount_received"=>"0.08951560", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2Mz6ytyZvT7Ecjrwk1ejrAjhWMFJ4XjskaW", "balance_change"=>"0.01000000", "amount_sent"=>"0.00000000", "amount_received"=>"0.01000000", "txid"=>"989f5b31fc633a213c46aaa81bddae79e24108ac4fabf6ad4cd7e9bd6e7bf795", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89602240", "amount_received"=>"49.89453800", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89602240", "amount_received"=>"49.89453800", "txid"=>"b7b9eebbdc6020247ac3dedf906dac50609fb662bf81631b4bbd5e021906e4ef", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89453800", "amount_received"=>"49.89305360", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89453800", "amount_received"=>"49.89305360", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"aa4a5f09593767bf5e5f3610d669d77609d47787ec93153957cbadf326f21681", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:34 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89305360", "amount_received"=>"49.89156920", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89305360", "amount_received"=>"49.89156920", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:35 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"0664b74f3cb786618758ece3aa0135b917f286116c203443ecbdaced823aef35", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.59ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:35 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:35 +0000
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89156920", "amount_received"=>"49.89008480", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89156920", "amount_received"=>"49.89008480", "txid"=>"e10e3a740139e1753013100320a3f4f07b64760711908b95b6646e5828bec742", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:35 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.89008480", "amount_received"=>"49.88860040", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:35 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.91ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:35 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:35 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88860040", "amount_received"=>"49.88711600", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88860040", "amount_received"=>"49.88711600", "txid"=>"5d19e5cf49547a6db1773a8de9ccd695c9253f6017d3c394a82ea262de22303b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Processing by BitcoinController#ngrok as TEXT
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N5NNvnxdsrAQ9PCLcGGHZfRmRp39HfrVrU", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"87b44a77e5ea3eb2c348041fa7303ab6a1da53004c1af3703afeb89369cf055b", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724033}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:39 +0000
+Processing by BitcoinController#ngrok as TEXT
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:40:39 +0000
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724038, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724038}}
+Processing by BitcoinController#ngrok as TEXT
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88711600", "amount_received"=>"49.88563160", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724038, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88711600", "amount_received"=>"49.88563160", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724038}}
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.28ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:42:17 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:42:17 +0000
+Processing by BitcoinController#ngrok as TEXT
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88563160", "amount_received"=>"49.88414720", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487724137, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88563160", "amount_received"=>"49.88414720", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487724137}}
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487724137, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>0, "is_green"=>true}, "created_at"=>1487724137}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:44:46 +0000
+Processing by BitcoinController#ngrok as TEXT
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:44:46 +0000
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724286, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724286}}
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:44:46 +0000
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88711600", "amount_received"=>"49.88563160", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724286, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88711600", "amount_received"=>"49.88563160", "txid"=>"1adc2e9485cd14b2d3bac116a3b4ddaeea9e9915c014272c3e6d85f8b4a56e85", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487724286}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Processing by BitcoinController#ngrok as TEXT
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88563160", "amount_received"=>"49.88414720", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724286, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88563160", "amount_received"=>"49.88414720", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724286}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:44:46 +0000
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724286, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>1, "is_green"=>true}, "created_at"=>1487724286}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:58:49 +0000
+Started POST "/" for 45.56.79.5 at 2017-02-22 00:58:49 +0000
+Processing by BitcoinController#ngrok as TEXT
+Processing by BitcoinController#ngrok as TEXT
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487725129, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2NAJBXKvs5HLemhFGy5yL1BtqME4bPD6tdE", "balance_change"=>"0.00100000", "amount_sent"=>"0.00000000", "amount_received"=>"0.00100000", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487725129}}
+  Parameters: {"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88563160", "amount_received"=>"49.88414720", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487725129, "bitcoin"=>{"notification_id"=>"9518c0e778da1cba5ed5ec5d", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTCTEST", "address"=>"2N7eRjuwFGy4KxaLuvFi9eGWuyhWqVrxJXB", "balance_change"=>"-0.00148440", "amount_sent"=>"49.88563160", "amount_received"=>"49.88414720", "txid"=>"4f891f7a07de23a126e2b5bd78666f6cbd27a1d3c124e07e14911f2d9181b072", "confirmations"=>3, "is_green"=>true}, "created_at"=>1487725129}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.52ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 09:33:26 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"amount"=>"1", "message"=>"hi there", "recipient_url"=>"https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi", "recipient_name"=>"Brian Eno", "recipient_img"=>"https://i.scdn.co/image/0cd20e6a723bae45df1ed74701de80243c22dd57", "payment_status"=>"pending", "transaction"=>{"message"=>"hi there", "amount"=>"1", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi", "recipient_name"=>"Brian Eno", "recipient_img"=>"https://i.scdn.co/image/0cd20e6a723bae45df1ed74701de80243c22dd57"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Unpermitted parameter: recipient_img
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "wallet_address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["message", "hi there"], ["amount", 1], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi"], ["recipient_name", "Brian Eno"], ["wallet_address", "2MuAPFTcWKPJ3kairNDPYNo2FXbQLspjhYt"], ["created_at", 2017-02-22 09:33:27 UTC], ["updated_at", 2017-02-22 09:33:27 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (22.57ms)
+Completed 201 Created in 921ms (Views: 42.0ms | ActiveRecord: 33.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:35:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:35:51 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:36:40 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:36:41 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:36:41 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:37:13 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:37:13 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:37:13 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:37:36 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:37:37 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:37:37 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:38:25 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:38:26 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:38:26 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:39:06 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:39:07 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:39:07 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:41:51 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:44:26 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:44:26 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:48:56 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:48:57 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:48:57 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:49:11 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 10:51:51 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 10:51:51 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:10:58 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 11:10:59 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:10:59 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 11:14:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:14:24 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:15:34 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 11:15:35 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:15:35 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:15:52 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-22 11:15:53 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:15:53 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-22 11:16:52 +0000
+Started POST "/login" for 127.0.0.1 at 2017-02-22 11:17:32 +0000
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"charlie.gavins@neonseed.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"charlie.gavins@neonseed.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "charlie.gavins@neonseed.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (30.19ms)
+Completed 200 OK in 175ms (Views: 35.8ms | ActiveRecord: 15.2ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 11:54:47 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"amount"=>"1", "message"=>"hi brian i like your vibe", "recipient_url"=>"https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi", "recipient_name"=>"Brian Eno", "recipient_img"=>"https://i.scdn.co/image/0cd20e6a723bae45df1ed74701de80243c22dd57", "payment_status"=>"pending", "transaction"=>{"message"=>"hi brian i like your vibe", "amount"=>"1", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi", "recipient_name"=>"Brian Eno", "recipient_img"=>"https://i.scdn.co/image/0cd20e6a723bae45df1ed74701de80243c22dd57"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Unpermitted parameter: recipient_img
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "wallet_address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["message", "hi brian i like your vibe"], ["amount", 1], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi"], ["recipient_name", "Brian Eno"], ["wallet_address", "2N6qDU33XDBckTmijWr6GgS4fyzJMzktUEE"], ["created_at", 2017-02-22 11:54:49 UTC], ["updated_at", 2017-02-22 11:54:49 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (17.59ms)
+Completed 201 Created in 2144ms (Views: 20.4ms | ActiveRecord: 17.1ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-22 11:55:51 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"amount"=>"1", "message"=>"hi brian i like your vibe", "recipient_url"=>"https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi", "recipient_name"=>"Brian Eno", "recipient_img"=>"https://i.scdn.co/image/0cd20e6a723bae45df1ed74701de80243c22dd57", "payment_status"=>"pending", "transaction"=>{"message"=>"hi brian i like your vibe", "amount"=>"1", "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi", "recipient_name"=>"Brian Eno", "recipient_img"=>"https://i.scdn.co/image/0cd20e6a723bae45df1ed74701de80243c22dd57"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Unpermitted parameter: recipient_img
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "wallet_address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["message", "hi brian i like your vibe"], ["amount", 1], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/7MSUfLeTdDEoZiJPDSBXgi"], ["recipient_name", "Brian Eno"], ["wallet_address", "2NBX1Ts65cfHvAs7FucJ3X1CdHsJ6M8LL4n"], ["created_at", 2017-02-22 11:55:52 UTC], ["updated_at", 2017-02-22 11:55:52 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (1.52ms)
+Completed 201 Created in 1250ms (Views: 2.5ms | ActiveRecord: 2.6ms)
+
+
