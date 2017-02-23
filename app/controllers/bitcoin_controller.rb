@@ -6,6 +6,11 @@ class BitcoinController < ApplicationController
       render json: { status: 200 }
     end
 
+  def exchange
+    response = Unirest.get"https://blockchain.info/ticker"
+    render json: { response: response }
+  end
+
   def generate_address
     response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=37be-fd8d-5632-ee22"
 

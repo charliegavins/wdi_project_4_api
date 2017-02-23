@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   end
   resources :users
   get 'address', to: 'bitcoin#generate_address'
+  get 'exchange', to: 'bitcoin#exchange'
   post '/', to: 'bitcoin#ngrok'
   post 'register', to: 'authentications#register'
   post 'login', to: 'authentications#login'
