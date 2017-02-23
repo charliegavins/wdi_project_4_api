@@ -8,6 +8,7 @@ class CreateTransactions < ActiveRecord::Migration[5.0]
       t.string :recipient_name
       t.string :recipient_img
       t.string :wallet_address
+      t.string :email
       t.string :qr_image_url
       t.references :user, foreign_key: true
 

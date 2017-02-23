@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20170218132704) do
     t.string   "recipient_name"
     t.string   "recipient_img"
     t.string   "wallet_address"
+    t.string   "email"
     t.string   "qr_image_url"
     t.integer  "user_id"
     t.datetime "created_at",     null: false
