@@ -10,19 +10,24 @@ class Transaction < ApplicationRecord
 
     def get_address_then_generate_gr_url
       p 'ping'
-      # response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=37be-fd8d-5632-ee22"
+      # response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=6255-1e30-beec-4fac"
       #
       # # puts response.body
       # if response.body["data"]["address"]
       #   self.wallet_address = response.body["data"]["address"]
       # end
 
-      self.wallet_address = "2N3JwUCfwZcADNJjjQ6hPrMTTzSEAvHNqke"
+      # TESTNET
+      # self.wallet_address = "2N3JwUCfwZcADNJjjQ6hPrMTTzSEAvHNqke"
+      # BTC
+      self.wallet_address = "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"
       generate_qr_url
     end
 
     def generate_qr_url
       p 'ping'
-      self.qr_image_url = "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:#{self.wallet_address}?amount=#{self.amount}%26label=tipjar.com%26message=#{self.message}"
+      blibber = (self.amount.to_f)/100000000
+      p blibber
+      self.qr_image_url = "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:#{self.wallet_address}?amount=#{blibber}%26label=tipjar.com%26message=#{self.message}"
     end
 end
