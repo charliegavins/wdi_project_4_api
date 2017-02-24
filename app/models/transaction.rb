@@ -10,17 +10,17 @@ class Transaction < ApplicationRecord
 
     def get_address_then_generate_gr_url
       p 'ping'
-      # response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=6255-1e30-beec-4fac"
-      #
-      # # puts response.body
-      # if response.body["data"]["address"]
-      #   self.wallet_address = response.body["data"]["address"]
-      # end
+      response = Unirest.get "https://block.io/api/v2/get_new_address/?api_key=6255-1e30-beec-4fac"
+
+      # puts response.body
+      if response.body["data"]["address"]
+        self.wallet_address = response.body["data"]["address"]
+      end
 
       # TESTNET
       # self.wallet_address = "2N3JwUCfwZcADNJjjQ6hPrMTTzSEAvHNqke"
       # BTC
-      self.wallet_address = "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"
+      # self.wallet_address = "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"
       generate_qr_url
     end
 

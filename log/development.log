@@ -19909,3 +19909,1802 @@ Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 3.3ms)
 
 
 TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_4)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:33:39 +0000
+TransactionsChannel stopped streaming from transactions_channel_4
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 22:33:40 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:33:40 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 22:33:40 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.71ms)
+Completed 200 OK in 149ms (Views: 6.5ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:35:00 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 22:35:01 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:35:01 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 22:35:01 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.56ms)
+Completed 200 OK in 121ms (Views: 5.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 22:35:18 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>53699.34808991419, "message"=>"does this work?", "transaction"=>{"message"=>"does this work?", "amount"=>53699.34808991419, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "does this work?"], ["amount", 53699], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00053699%26label=tipjar.com%26message=does this work?"], ["created_at", 2017-02-23 22:35:18 UTC], ["updated_at", 2017-02-23 22:35:18 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 201 Created in 12ms (Views: 1.7ms | ActiveRecord: 3.7ms)
+
+
+  [1m[36mTransaction Load (0.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_5
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 22:35:58 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00053699", "amount_sent"=>"0.00000000", "amount_received"=>"0.00053699", "txid"=>"82d1d26ff3a09279020a4a1f645774236014d4f607c8b34b18c25a920220f18b", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487889358, "transaction"=>{"created_at"=>1487889358}}
+  [1m[36mTransaction Load (2.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 22:35:58 UTC], ["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_5: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 5.0ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_5)
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 22:37:46 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00107398", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107398", "txid"=>"b84070a9216c66b9ac6e2ce31c1f566572686792d8861fd462077679db126852", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487889465, "transaction"=>{"created_at"=>1487889465}}
+  [1m[36mTransaction Load (2.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_5: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 2.5ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_5)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:39:16 +0000
+TransactionsChannel stopped streaming from transactions_channel_5
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 22:39:16 +0000
+Processing by BitcoinController#exchange as HTML
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 22:39:17 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:39:17 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.52ms)
+Completed 200 OK in 350ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 22:39:29 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-23 22:39:29 UTC], ["updated_at", 2017-02-23 22:39:29 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.87ms)
+Completed 201 Created in 15ms (Views: 2.0ms | ActiveRecord: 3.3ms)
+
+
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_6
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:39:32 +0000
+TransactionsChannel stopped streaming from transactions_channel_6
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 22:39:33 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 22:39:33 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 22:39:33 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.12ms)
+Completed 200 OK in 142ms (Views: 16.4ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 22:39:51 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/7cVZApDoQZpS447nHTsNqu", "recipient_name"=>"LEE HI", "recipient_img"=>"https://i.scdn.co/image/9e55953481bc63a5afbef4748774336c1712de5e", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>5300.7654305281685, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>5300.7654305281685, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/7cVZApDoQZpS447nHTsNqu", "recipient_name"=>"LEE HI", "recipient_img"=>"https://i.scdn.co/image/9e55953481bc63a5afbef4748774336c1712de5e", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 5300], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/7cVZApDoQZpS447nHTsNqu"], ["recipient_name", "LEE HI"], ["recipient_img", "https://i.scdn.co/image/9e55953481bc63a5afbef4748774336c1712de5e"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=5.3e-05%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-23 22:39:51 UTC], ["updated_at", 2017-02-23 22:39:51 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 201 Created in 11ms (Views: 1.6ms | ActiveRecord: 3.2ms)
+
+
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_7
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 22:39:54 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00053699", "amount_sent"=>"0.00000000", "amount_received"=>"0.00053699", "txid"=>"82d1d26ff3a09279020a4a1f645774236014d4f607c8b34b18c25a920220f18b", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487889594, "transaction"=>{"created_at"=>1487889594}}
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 22:39:54 UTC], ["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_7: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_7)
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 22:46:30 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00107398", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107398", "txid"=>"b84070a9216c66b9ac6e2ce31c1f566572686792d8861fd462077679db126852", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487889990, "transaction"=>{"created_at"=>1487889990}}
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_7: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_7)
+Completed 200 OK in 7ms (Views: 1.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 22:50:14 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00053699", "amount_sent"=>"0.00000000", "amount_received"=>"0.00053699", "txid"=>"82d1d26ff3a09279020a4a1f645774236014d4f607c8b34b18c25a920220f18b", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487890213, "transaction"=>{"created_at"=>1487890213}}
+  [1m[36mTransaction Load (1.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_7: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.6ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_7)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:13:21 +0000
+TransactionsChannel stopped streaming from transactions_channel_7
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:13:50 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:13:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:13:50 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.86ms)
+Completed 200 OK in 887ms (Views: 8.7ms | ActiveRecord: 1.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:14:07 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:14:08 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:14:08 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:14:08 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.2ms)
+Completed 200 OK in 113ms (Views: 5.3ms | ActiveRecord: 1.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:06 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:15:07 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:07 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:15:07 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.86ms)
+Completed 200 OK in 114ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:39 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:15:39 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:39 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:15:39 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.04ms)
+Completed 200 OK in 82ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:41 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:15:41 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:41 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:15:41 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.99ms)
+Completed 200 OK in 80ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:50 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:15:50 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:15:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:15:50 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.66ms)
+Completed 200 OK in 111ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:16:50 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:16:50 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:16:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:16:50 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.99ms)
+Completed 200 OK in 88ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:18:39 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:18:40 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:18:40 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:18:40 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.55ms)
+Completed 200 OK in 121ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:18:40 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:18:43 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:18:43 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:18:43 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.67ms)
+Completed 200 OK in 83ms (Views: 5.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-23 23:19:26 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (11.0ms)
+Completed 200 OK in 35ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-02-23 23:19:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:19:29 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:19:29 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:19:29 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:19:29 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.78ms)
+Completed 200 OK in 93ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:19:33 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:19:33 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:19:33 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:19:33 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.93ms)
+Completed 200 OK in 110ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:20:57 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:20:57 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:20:57 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:20:57 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.3ms)
+Completed 200 OK in 75ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-23 23:21:59 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.9ms)
+Completed 200 OK in 18ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:22:05 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:22:05 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:22:05 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:22:05 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.47ms)
+Completed 200 OK in 101ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:22:52 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:22:53 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:22:53 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:22:53 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.16ms)
+Completed 200 OK in 121ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:22:59 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:23:00 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:23:00 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:23:00 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.7ms)
+Completed 200 OK in 112ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:23:43 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:23:43 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:23:43 +0000
+Processing by BitcoinController#exchange as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.49ms)
+Completed 200 OK in 754ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:24:15 +0000
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:31:52 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:31:52 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:31:52 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:31:52 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.81ms)
+Completed 200 OK in 110ms (Views: 4.5ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:32:22 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:32:22 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:32:22 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:32:22 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.8ms)
+Completed 200 OK in 84ms (Views: 6.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:32:41 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>53007.65430528168, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>53007.65430528168, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 53007], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00053007%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-23 23:32:41 UTC], ["updated_at", 2017-02-23 23:32:41 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 201 Created in 12ms (Views: 1.5ms | ActiveRecord: 3.0ms)
+
+
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_8
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:33:06 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00053007", "amount_sent"=>"0.00000000", "amount_received"=>"0.00053007", "txid"=>"794ed0e9b7ddca242b84514b5d7bb543f1bdf4038229644c10831d88fc215197", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487892786, "transaction"=>{"created_at"=>1487892786}}
+  [1m[36mTransaction Load (1.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:33:06 UTC], ["id", 8]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_8: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 3.3ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_8)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:37:32 +0000
+TransactionsChannel stopped streaming from transactions_channel_8
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:37:33 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:37:33 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:37:33 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.93ms)
+Completed 200 OK in 102ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:37:52 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>169471.41864524546, "message"=>"ch", "transaction"=>{"message"=>"ch", "amount"=>169471.41864524546, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "ch"], ["amount", 169471], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00169471%26label=tipjar.com%26message=ch"], ["created_at", 2017-02-23 23:37:52 UTC], ["updated_at", 2017-02-23 23:37:52 UTC]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 201 Created in 24ms (Views: 1.6ms | ActiveRecord: 17.1ms)
+
+
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_9
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:38:14 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00169471", "amount_sent"=>"0.00000000", "amount_received"=>"0.00169471", "txid"=>"0422381ceedcde112d36d542e508ad1d35e722e89b2645730c477d8881522213", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487893094, "transaction"=>{"created_at"=>1487893094}}
+  [1m[36mTransaction Load (1.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:38:14 UTC], ["id", 9]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_9: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 3.4ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_9)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:38:50 +0000
+TransactionsChannel stopped streaming from transactions_channel_9
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:38:50 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:38:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:38:50 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.25ms)
+Completed 200 OK in 86ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:39:03 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlie.gavins@neonseed.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi there", "transaction"=>{"message"=>"hi there", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlie.gavins@neonseed.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi there"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlie.gavins@neonseed.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi there"], ["created_at", 2017-02-23 23:39:03 UTC], ["updated_at", 2017-02-23 23:39:03 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 201 Created in 9ms (Views: 1.5ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_10
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:39:25 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"e127a90f8dcf0fbaed1eac64704af4e2c292cfe83f07c76b6a40f76d3aeea663", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487893164, "transaction"=>{"created_at"=>1487893164}}
+  [1m[36mTransaction Load (1.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:39:25 UTC], ["id", 10]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_10: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 2.8ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_10)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:40:24 +0000
+TransactionsChannel stopped streaming from transactions_channel_10
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:40:24 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:40:24 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:40:24 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.2ms)
+Completed 200 OK in 882ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:40:36 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-23 23:40:36 UTC], ["updated_at", 2017-02-23 23:40:36 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 201 Created in 8ms (Views: 1.4ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mTransaction Load (12.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_11
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:40:54 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"83b01d2f32d96fa403a296efc190023eaf4d8f3d6633162a42b3cb1126cf7d0c", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487893253, "transaction"=>{"created_at"=>1487893253}}
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:40:54 UTC], ["id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_11: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_11)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.9ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:42:08 +0000
+TransactionsChannel stopped streaming from transactions_channel_11
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:42:09 +0000
+Processing by BitcoinController#exchange as HTML
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:42:09 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:42:09 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (21.71ms)
+Completed 200 OK in 125ms (Views: 24.9ms | ActiveRecord: 2.8ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:42:37 +0000
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:42:38 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.08ms)
+Completed 200 OK in 81ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:42:38 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:42:38 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:42:50 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi there", "transaction"=>{"message"=>"hi there", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi there"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi there"], ["created_at", 2017-02-23 23:42:50 UTC], ["updated_at", 2017-02-23 23:42:50 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 201 Created in 14ms (Views: 1.4ms | ActiveRecord: 5.0ms)
+
+
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_12
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:43:11 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4be5a1171f3c67cf241a6824500bb428fbbd59b2cc3e2b6f65ffe561e2823d89", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487893391, "transaction"=>{"created_at"=>1487893391}}
+  [1m[36mTransaction Load (0.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:43:11 UTC], ["id", 12]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_12: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 2.3ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_12)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:44:41 +0000
+TransactionsChannel stopped streaming from transactions_channel_12
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:44:42 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.02ms)
+Completed 200 OK in 79ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:44:42 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:44:42 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:45:02 +0000
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:45:02 +0000
+Processing by BitcoinController#exchange as HTML
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:45:02 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:45:02 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.18ms)
+Completed 200 OK in 124ms (Views: 6.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:45:13 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-23 23:45:13 UTC], ["updated_at", 2017-02-23 23:45:13 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 201 Created in 14ms (Views: 1.8ms | ActiveRecord: 4.6ms)
+
+
+  [1m[36mTransaction Load (1.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_13
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:45:26 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"bd5f7636e604dcd1a897c4a2d89115a25c3367865d80f44ea2ba857ecb693296", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487893525, "transaction"=>{"created_at"=>1487893525}}
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:45:26 UTC], ["id", 13]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_13: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 2.4ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_13)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:46:37 +0000
+TransactionsChannel stopped streaming from transactions_channel_13
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:46:37 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.17ms)
+Completed 200 OK in 89ms (Views: 7.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:46:37 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:46:37 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:46:49 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi there", "transaction"=>{"message"=>"hi there", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi there"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi there"], ["created_at", 2017-02-23 23:46:49 UTC], ["updated_at", 2017-02-23 23:46:49 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 201 Created in 10ms (Views: 1.9ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_14
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:47:10 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"f487713c183d8f950f52de9d0a81e3332bd11ffa082df08c419825d8141963bf", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487893629, "transaction"=>{"created_at"=>1487893629}}
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:47:10 UTC], ["id", 14]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_14: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 2.7ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_14)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:55:33 +0000
+TransactionsChannel stopped streaming from transactions_channel_14
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:55:33 +0000
+Processing by BitcoinController#exchange as HTML
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:55:34 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:55:34 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.84ms)
+Completed 200 OK in 477ms (Views: 5.5ms | ActiveRecord: 1.1ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:55:49 +0000
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:55:49 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.22ms)
+Completed 200 OK in 78ms (Views: 4.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:55:49 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:55:49 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:56:03 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-23 23:56:03 UTC], ["updated_at", 2017-02-23 23:56:03 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.89ms)
+Completed 201 Created in 13ms (Views: 2.2ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mTransaction Load (1.2ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_15
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:56:25 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"47610a54150deb1a22ed922c81032c1c1cf198cb4a7b8d97ed13cbe6b4f53a65", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487894185, "transaction"=>{"created_at"=>1487894185}}
+  [1m[36mTransaction Load (1.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:56:25 UTC], ["id", 15]]
+  [1m[35m (65.8ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_15: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 75ms (Views: 1.1ms | ActiveRecord: 67.9ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_15)
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:56:41 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_name"=>"Charlie Gavins", "recipient_img"=>"https://s2.postimg.org/z13tlm83d/imgforbitip.png", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_name"=>"Charlie Gavins", "recipient_img"=>"https://s2.postimg.org/z13tlm83d/imgforbitip.png", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["message", "hi"], ["amount", 106015], ["payment_status", "pending"], ["recipient_name", "Charlie Gavins"], ["recipient_img", "https://s2.postimg.org/z13tlm83d/imgforbitip.png"], ["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:37tghpefdKSS7qj9tg3ydWVrciVyukYjZy?amount=0.00106015%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-23 23:56:41 UTC], ["updated_at", 2017-02-23 23:56:41 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 201 Created in 10ms (Views: 1.3ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_16
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:58:25 +0000
+TransactionsChannel stopped streaming from transactions_channel_15
+TransactionsChannel stopped streaming from transactions_channel_16
+Started GET "/exchange" for 127.0.0.1 at 2017-02-23 23:58:26 +0000
+Processing by BitcoinController#exchange as HTML
+Started GET "/cable" for 127.0.0.1 at 2017-02-23 23:58:26 +0000
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.11ms)
+Completed 200 OK in 150ms (Views: 33.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-23 23:58:26 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:58:37 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi there", "transaction"=>{"message"=>"hi there", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi there"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F?amount=0.00106015%26label=tipjar.com%26message=hi there"], ["created_at", 2017-02-23 23:58:37 UTC], ["updated_at", 2017-02-23 23:58:37 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (9.95ms)
+Completed 201 Created in 748ms (Views: 13.1ms | ActiveRecord: 14.6ms)
+
+
+  [1m[36mTransaction Load (1.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_17
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-23 23:59:01 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4846393318b38f8f39ee8ad892d435cba57b32a0c04baeb82735b31c2c8c603a", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487894341, "transaction"=>{"created_at"=>1487894341}}
+  [1m[36mTransaction Load (1.2ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-23 23:59:01 UTC], ["id", 17]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_17: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 3.0ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_17)
+Started POST "/transactions" for 127.0.0.1 at 2017-02-23 23:59:10 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_name"=>"Charlie Gavins", "recipient_img"=>"https://s2.postimg.org/z13tlm83d/imgforbitip.png", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi there", "transaction"=>{"message"=>"hi there", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_name"=>"Charlie Gavins", "recipient_img"=>"https://s2.postimg.org/z13tlm83d/imgforbitip.png", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["message", "hi there"], ["amount", 106015], ["payment_status", "pending"], ["recipient_name", "Charlie Gavins"], ["recipient_img", "https://s2.postimg.org/z13tlm83d/imgforbitip.png"], ["wallet_address", "3JpJECT9acYNbUptuPnBbmF7jfWKvqH4i7"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:3JpJECT9acYNbUptuPnBbmF7jfWKvqH4i7?amount=0.00106015%26label=tipjar.com%26message=hi there"], ["created_at", 2017-02-23 23:59:10 UTC], ["updated_at", 2017-02-23 23:59:10 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 201 Created in 2197ms (Views: 2.0ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_18
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:05:43 +0000
+TransactionsChannel stopped streaming from transactions_channel_17
+TransactionsChannel stopped streaming from transactions_channel_18
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:05:44 +0000
+Processing by BitcoinController#exchange as HTML
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:05:44 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:05:44 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.85ms)
+Completed 200 OK in 314ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 00:05:54 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"1", "transaction"=>{"message"=>"1", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "1"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq?amount=0.00106015%26label=tipjar.com%26message=1"], ["created_at", 2017-02-24 00:05:54 UTC], ["updated_at", 2017-02-24 00:05:54 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.65ms)
+Completed 201 Created in 917ms (Views: 1.6ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_19
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:06:13 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4350934e5f999f2f0b75ff60d08322e98664a82066b70eb1b14ae0d3ffcfe2b7", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487894773, "transaction"=>{"created_at"=>1487894773}}
+  [1m[36mTransaction Load (0.5ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 00:06:13 UTC], ["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_19: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_19)
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 00:06:28 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_name"=>"Charlie Gavins", "recipient_img"=>"https://s2.postimg.org/z13tlm83d/imgforbitip.png", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"1", "transaction"=>{"message"=>"1", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_name"=>"Charlie Gavins", "recipient_img"=>"https://s2.postimg.org/z13tlm83d/imgforbitip.png", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["message", "1"], ["amount", 106015], ["payment_status", "pending"], ["recipient_name", "Charlie Gavins"], ["recipient_img", "https://s2.postimg.org/z13tlm83d/imgforbitip.png"], ["wallet_address", "38fQ69pgkfUy134DLXJs52bcZfPK17q9R5"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:38fQ69pgkfUy134DLXJs52bcZfPK17q9R5?amount=0.00106015%26label=tipjar.com%26message=1"], ["created_at", 2017-02-24 00:06:28 UTC], ["updated_at", 2017-02-24 00:06:28 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 201 Created in 3456ms (Views: 1.4ms | ActiveRecord: 3.8ms)
+
+
+  [1m[36mTransaction Load (0.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_20
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:06:45 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"38fQ69pgkfUy134DLXJs52bcZfPK17q9R5", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"3b2dd25e5daf601e18af28edd8c8319ad890b705bd2564073dce55ca1a20ad1f", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487894805, "transaction"=>{"created_at"=>1487894805}}
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "38fQ69pgkfUy134DLXJs52bcZfPK17q9R5"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 00:06:45 UTC], ["id", 20]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_20: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_20)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:09:30 +0000
+TransactionsChannel stopped streaming from transactions_channel_19
+TransactionsChannel stopped streaming from transactions_channel_20
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:09:31 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:09:31 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:10:04 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:10:04 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:10:04 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:11:31 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:11:31 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:11:31 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:11:44 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:11:45 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:11:45 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:12:41 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:12:41 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:12:41 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:13:03 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:13:03 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:13:03 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:14:42 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (8.4ms)
+Completed 200 OK in 42ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:14:44 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:14:44 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:14:44 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:14:58 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:14:58 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:14:58 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:14:58 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:15:13 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:15:17 +0000
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:15:17 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:15:17 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:15:17 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:15:17 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.38ms)
+Completed 200 OK in 162ms (Views: 9.1ms | ActiveRecord: 0.9ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:15:49 +0000
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:15:50 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:15:50 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:15:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:15:50 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.92ms)
+Completed 200 OK in 121ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:18 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00169471", "amount_sent"=>"0.00000000", "amount_received"=>"0.00169471", "txid"=>"0422381ceedcde112d36d542e508ad1d35e722e89b2645730c477d8881522213", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895378, "transaction"=>{"created_at"=>1487895378}}
+  [1m[36mTransaction Load (1.2ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 00:16:18 UTC], ["id", 16]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 15ms (Views: 0.9ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:18 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00053007", "amount_sent"=>"0.00000000", "amount_received"=>"0.00053007", "txid"=>"794ed0e9b7ddca242b84514b5d7bb543f1bdf4038229644c10831d88fc215197", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895378, "transaction"=>{"created_at"=>1487895378}}
+  [1m[36mTransaction Load (1.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"e127a90f8dcf0fbaed1eac64704af4e2c292cfe83f07c76b6a40f76d3aeea663", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895378, "transaction"=>{"created_at"=>1487895378}}
+  [1m[36mTransaction Load (1.5ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+Processing by TransactionsController#webhook as TEXT
+Processing by TransactionsController#webhook as TEXT
+Processing by TransactionsController#webhook as TEXT
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"f487713c183d8f950f52de9d0a81e3332bd11ffa082df08c419825d8141963bf", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"47610a54150deb1a22ed922c81032c1c1cf198cb4a7b8d97ed13cbe6b4f53a65", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4846393318b38f8f39ee8ad892d435cba57b32a0c04baeb82735b31c2c8c603a", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+  [1m[36mTransaction Load (1.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[36mTransaction Load (1.5ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTransaction Load (3.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 11ms (Views: 2.5ms | ActiveRecord: 2.5ms)
+
+
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[ActionCable] Broadcasting to transactions_channel_17: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 15ms (Views: 2.4ms | ActiveRecord: 6.0ms)
+
+
+Completed 200 OK in 14ms (Views: 1.1ms | ActiveRecord: 4.7ms)
+
+
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4be5a1171f3c67cf241a6824500bb428fbbd59b2cc3e2b6f65ffe561e2823d89", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4350934e5f999f2f0b75ff60d08322e98664a82066b70eb1b14ae0d3ffcfe2b7", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+  [1m[36mTransaction Load (3.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTransaction Load (2.2ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq"], ["LIMIT", 1]]
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 3.5ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_19: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"83b01d2f32d96fa403a296efc190023eaf4d8f3d6633162a42b3cb1126cf7d0c", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:19 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"bd5f7636e604dcd1a897c4a2d89115a25c3367865d80f44ea2ba857ecb693296", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+  [1m[36mTransaction Load (1.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTransaction Load (1.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 1.8ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:16:20 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"38fQ69pgkfUy134DLXJs52bcZfPK17q9R5", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"3b2dd25e5daf601e18af28edd8c8319ad890b705bd2564073dce55ca1a20ad1f", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487895379, "transaction"=>{"created_at"=>1487895379}}
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "38fQ69pgkfUy134DLXJs52bcZfPK17q9R5"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_20: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:17:48 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:17:51 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:17:51 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:17:51 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:17:51 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.24ms)
+Completed 200 OK in 103ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:18:11 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:18:13 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:18:13 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:18:13 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:18:13 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.61ms)
+Completed 200 OK in 103ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:18:50 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:19:01 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:19:01 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:19:02 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:19:02 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:19:02 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.66ms)
+Completed 200 OK in 122ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:19:03 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:19:03 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:19:03 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:19:03 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.95ms)
+Completed 200 OK in 139ms (Views: 5.4ms | ActiveRecord: 1.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:19:04 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:19:04 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:19:04 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:19:04 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.49ms)
+Completed 200 OK in 89ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 00:19:18 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ?amount=0.00106015%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-24 00:19:18 UTC], ["updated_at", 2017-02-24 00:19:18 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (1.62ms)
+Completed 201 Created in 2641ms (Views: 3.1ms | ActiveRecord: 2.6ms)
+
+
+  [1m[36mTransaction Load (0.5ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_21
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:19:49 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"be9090980a6f4a6a5013990a93f7482785dd4ffcdf5ed484ea2b2c605d9bcd91", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487895589, "transaction"=>{"created_at"=>1487895589}}
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 00:19:49 UTC], ["id", 21]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_21: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 2.8ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_21)
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:21:58 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-24 00:22:50 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:22:51 +0000
+TransactionsChannel stopped streaming from transactions_channel_21
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:22:52 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:22:52 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:22:52 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.4ms)
+Completed 200 OK in 312ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 00:23:06 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"well cone", "transaction"=>{"message"=>"well cone", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "well cone"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf?amount=0.00106015%26label=tipjar.com%26message=well cone"], ["created_at", 2017-02-24 00:23:06 UTC], ["updated_at", 2017-02-24 00:23:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 201 Created in 1646ms (Views: 1.5ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_22
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:26:43 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"5a0ca9652e36e801f135469e83ad2cc7b34bfa7fd29e7f22d56b7a8e14f94c4e", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487896003, "transaction"=>{"created_at"=>1487896003}}
+  [1m[36mTransaction Load (1.2ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 00:26:43 UTC], ["id", 22]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_22: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_22)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 2.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:30:06 +0000
+TransactionsChannel stopped streaming from transactions_channel_22
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 00:30:07 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 00:30:07 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 00:30:07 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.83ms)
+Completed 200 OK in 141ms (Views: 5.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 00:30:19 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>106015.30861056336, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>106015.30861056336, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 106015], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy?amount=0.00106015%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-24 00:30:19 UTC], ["updated_at", 2017-02-24 00:30:19 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 201 Created in 1125ms (Views: 1.4ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_23
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:31:08 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"c8104ce2816c01e3e69d4c0595c7caa2c507445a32b0ad339943f527728dc588", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487896267, "transaction"=>{"created_at"=>1487896267}}
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 00:31:08 UTC], ["id", 23]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_23: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_23)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:31:26 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"be9090980a6f4a6a5013990a93f7482785dd4ffcdf5ed484ea2b2c605d9bcd91", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487896286, "transaction"=>{"created_at"=>1487896286}}
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_21: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 00:31:27 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"5a0ca9652e36e801f135469e83ad2cc7b34bfa7fd29e7f22d56b7a8e14f94c4e", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487896286, "transaction"=>{"created_at"=>1487896286}}
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_22: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:37 +0000
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:37 +0000
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:37 +0000
+Processing by TransactionsController#webhook as TEXT
+Processing by TransactionsController#webhook as TEXT
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00053007", "amount_sent"=>"0.00000000", "amount_received"=>"0.00053007", "txid"=>"794ed0e9b7ddca242b84514b5d7bb543f1bdf4038229644c10831d88fc215197", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899597, "transaction"=>{"created_at"=>1487899597}}
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00169471", "amount_sent"=>"0.00000000", "amount_received"=>"0.00169471", "txid"=>"0422381ceedcde112d36d542e508ad1d35e722e89b2645730c477d8881522213", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899597, "transaction"=>{"created_at"=>1487899597}}
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"e127a90f8dcf0fbaed1eac64704af4e2c292cfe83f07c76b6a40f76d3aeea663", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899597, "transaction"=>{"created_at"=>1487899597}}
+  [1m[36mTransaction Load (2.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[36mTransaction Load (1.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTransaction Load (2.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+Completed 200 OK in 21ms (Views: 3.5ms | ActiveRecord: 3.7ms)
+
+
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+Completed 200 OK in 16ms (Views: 1.6ms | ActiveRecord: 2.6ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 16ms (Views: 1.0ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"bd5f7636e604dcd1a897c4a2d89115a25c3367865d80f44ea2ba857ecb693296", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+  [1m[36mTransaction Load (1.5ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 1.8ms)
+
+
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"f487713c183d8f950f52de9d0a81e3332bd11ffa082df08c419825d8141963bf", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+  [1m[36mTransaction Load (1.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"47610a54150deb1a22ed922c81032c1c1cf198cb4a7b8d97ed13cbe6b4f53a65", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4be5a1171f3c67cf241a6824500bb428fbbd59b2cc3e2b6f65ffe561e2823d89", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mTransaction Load (1.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+Processing by TransactionsController#webhook as TEXT
+Processing by TransactionsController#webhook as TEXT
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"37tghpefdKSS7qj9tg3ydWVrciVyukYjZy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"83b01d2f32d96fa403a296efc190023eaf4d8f3d6633162a42b3cb1126cf7d0c", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4350934e5f999f2f0b75ff60d08322e98664a82066b70eb1b14ae0d3ffcfe2b7", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"4846393318b38f8f39ee8ad892d435cba57b32a0c04baeb82735b31c2c8c603a", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+  [1m[36mTransaction Load (1.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3Lqb4VuSsWpuRq772A14VqQb5epyCFvcaq"], ["LIMIT", 1]]
+  [1m[36mTransaction Load (1.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "37tghpefdKSS7qj9tg3ydWVrciVyukYjZy"], ["LIMIT", 1]]
+  [1m[36mTransaction Load (1.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3DvJpnN64frwJQF34eehSWCjCc3Ge3Ba9F"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_17: {:payment_status=>"complete"}
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_16: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+[ActionCable] Broadcasting to transactions_channel_19: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 1.9ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 12ms (Views: 1.3ms | ActiveRecord: 2.9ms)
+
+
+Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:26:46 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"38fQ69pgkfUy134DLXJs52bcZfPK17q9R5", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"3b2dd25e5daf601e18af28edd8c8319ad890b705bd2564073dce55ca1a20ad1f", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899606, "transaction"=>{"created_at"=>1487899606}}
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "38fQ69pgkfUy134DLXJs52bcZfPK17q9R5"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_20: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:31:49 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"be9090980a6f4a6a5013990a93f7482785dd4ffcdf5ed484ea2b2c605d9bcd91", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899908, "transaction"=>{"created_at"=>1487899908}}
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 01:31:49 +0000
+Processing by TransactionsController#webhook as TEXT
+  [1m[36mTransaction Load (1.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "39ZD9JJD6Hc2U2RpZnkwJFtQ4XdVx8mmKQ"], ["LIMIT", 1]]
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"5a0ca9652e36e801f135469e83ad2cc7b34bfa7fd29e7f22d56b7a8e14f94c4e", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487899909, "transaction"=>{"created_at"=>1487899909}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTransaction Load (1.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "36Zp6WVDzUo3WTMx1Rog5VqunHNrGxXehf"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActionCable] Broadcasting to transactions_channel_21: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 14ms (Views: 1.2ms | ActiveRecord: 3.1ms)
+
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_22: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 03:33:59 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>18, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"c8104ce2816c01e3e69d4c0595c7caa2c507445a32b0ad339943f527728dc588", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487903271, "transaction"=>{"created_at"=>1487903271}}
+  [1m[36mTransaction Load (2.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_23: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_23)
+Completed 200 OK in 28ms (Views: 4.2ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 03:34:00 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>13, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy", "balance_change"=>"0.00106015", "amount_sent"=>"0.00000000", "amount_received"=>"0.00106015", "txid"=>"c8104ce2816c01e3e69d4c0595c7caa2c507445a32b0ad339943f527728dc588", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487902549, "transaction"=>{"created_at"=>1487902549}}
+  [1m[36mTransaction Load (1.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "35yX5rZBpb2ziUYDTVYcMHJxLKgEGGUGMy"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_23: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_23)
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 1.7ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:29:25 +0000
+TransactionsChannel stopped streaming from transactions_channel_23
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 08:29:26 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:29:26 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 08:29:26 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.0ms)
+Completed 200 OK in 133ms (Views: 7.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-24 08:30:06 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/CharlieGavins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:30:42 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 08:30:42 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:30:42 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 08:30:42 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.14ms)
+Completed 200 OK in 132ms (Views: 10.8ms | ActiveRecord: 1.2ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:53:19 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 08:53:19 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:53:19 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 08:53:19 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.25ms)
+Completed 200 OK in 112ms (Views: 6.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 08:54:16 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>107461.01851553348, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>107461.01851553348, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 107461], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "36w7JVHPzhswbAdtaCzVu8EnDHzL86JDPV"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:36w7JVHPzhswbAdtaCzVu8EnDHzL86JDPV?amount=0.00107461%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-24 08:54:16 UTC], ["updated_at", 2017-02-24 08:54:16 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 201 Created in 876ms (Views: 3.0ms | ActiveRecord: 3.4ms)
+
+
+  [1m[36mTransaction Load (1.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_24
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:58:27 +0000
+TransactionsChannel stopped streaming from transactions_channel_24
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 08:58:28 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 08:58:28 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 08:58:28 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.98ms)
+Completed 200 OK in 702ms (Views: 8.6ms | ActiveRecord: 1.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 09:13:31 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 09:13:31 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 09:13:31 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 09:13:31 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.15ms)
+Completed 200 OK in 267ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 09:13:39 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 09:13:40 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 09:13:40 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 09:13:53 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 09:13:53 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 09:13:53 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 09:13:53 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.32ms)
+Completed 200 OK in 163ms (Views: 7.6ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:27:15 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 10:27:16 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:27:16 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 10:27:16 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.55ms)
+Completed 200 OK in 109ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 10:27:30 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlie.gavins@neonseed.com", "payment_status"=>"pending", "amount"=>107461.01851553348, "message"=>"I love you gorillaz", "transaction"=>{"message"=>"I love you gorillaz", "amount"=>107461.01851553348, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlie.gavins@neonseed.com"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "I love you gorillaz"], ["amount", 107461], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "35u16vvpypMFVu6jwueHzQRQtquokETsCJ"], ["email", "charlie.gavins@neonseed.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:35u16vvpypMFVu6jwueHzQRQtquokETsCJ?amount=0.00107461%26label=tipjar.com%26message=I love you gorillaz"], ["created_at", 2017-02-24 10:27:30 UTC], ["updated_at", 2017-02-24 10:27:30 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 201 Created in 2525ms (Views: 1.8ms | ActiveRecord: 2.8ms)
+
+
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_25
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 10:28:30 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"35u16vvpypMFVu6jwueHzQRQtquokETsCJ", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"1387e57e28450c6fbdec3fd4f8c1f14244f02ed3f234cedc24416bde0de05516", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487932109, "transaction"=>{"created_at"=>1487932109}}
+  [1m[36mTransaction Load (1.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "35u16vvpypMFVu6jwueHzQRQtquokETsCJ"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 10:28:30 UTC], ["id", 25]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_25: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 3.0ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_25)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:29:03 +0000
+TransactionsChannel stopped streaming from transactions_channel_25
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 10:29:03 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:29:03 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 10:29:03 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.67ms)
+Completed 200 OK in 45ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 10:29:22 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>107461.01851553348, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>107461.01851553348, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 107461], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs?amount=0.00107461%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-24 10:29:22 UTC], ["updated_at", 2017-02-24 10:29:22 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 201 Created in 759ms (Views: 1.4ms | ActiveRecord: 2.7ms)
+
+
+  [1m[36mTransaction Load (0.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_26
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 10:29:53 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"8e78e629107a4e5da21d8daff3dfd23bfb14fdc12dd90209f679e0babd350b38", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487932193, "transaction"=>{"created_at"=>1487932193}}
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 10:29:53 UTC], ["id", 26]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_26: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_26)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 2.1ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:34:07 +0000
+TransactionsChannel stopped streaming from transactions_channel_26
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 10:34:07 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:34:07 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 10:34:07 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.07ms)
+Completed 200 OK in 114ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 10:34:21 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com", "payment_status"=>"pending", "amount"=>107461.01851553348, "message"=>"hi", "transaction"=>{"message"=>"hi", "amount"=>107461.01851553348, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ", "recipient_name"=>"Gorillaz", "recipient_img"=>"https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250", "email"=>"charlesgavins@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "hi"], ["amount", 107461], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ"], ["recipient_name", "Gorillaz"], ["recipient_img", "https://i.scdn.co/image/d913ad6b61dfed2ca1085bd8fde4d6ba2569b250"], ["wallet_address", "3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND"], ["email", "charlesgavins@gmail.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND?amount=0.00107461%26label=tipjar.com%26message=hi"], ["created_at", 2017-02-24 10:34:21 UTC], ["updated_at", 2017-02-24 10:34:21 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 201 Created in 727ms (Views: 1.5ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_27
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 10:35:47 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"3ac3f87e9048922f32f2827e68b4765caea2e5286b2299c38a9a61efa9f0e091", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487932547, "transaction"=>{"created_at"=>1487932547}}
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 10:35:47 UTC], ["id", 27]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_27: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 2.5ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_27)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:36:10 +0000
+TransactionsChannel stopped streaming from transactions_channel_27
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 10:36:10 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 10:36:10 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 10:36:10 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (19.9ms)
+Completed 200 OK in 91ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 11:22:21 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>8, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"8e78e629107a4e5da21d8daff3dfd23bfb14fdc12dd90209f679e0babd350b38", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487934755, "transaction"=>{"created_at"=>1487934755}}
+  [1m[36mTransaction Load (1.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_26: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 26ms (Views: 3.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 11:22:21 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>11, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"35u16vvpypMFVu6jwueHzQRQtquokETsCJ", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"1387e57e28450c6fbdec3fd4f8c1f14244f02ed3f234cedc24416bde0de05516", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487934755, "transaction"=>{"created_at"=>1487934755}}
+  [1m[36mTransaction Load (1.3ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "35u16vvpypMFVu6jwueHzQRQtquokETsCJ"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_25: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 11:22:21 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>2, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"3ac3f87e9048922f32f2827e68b4765caea2e5286b2299c38a9a61efa9f0e091", "confirmations"=>1, "is_green"=>false}, "created_at"=>1487934755, "transaction"=>{"created_at"=>1487934755}}
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_27: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 1.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 11:27:06 +0000
+Started GET "/cable" for 127.0.0.1 at 2017-02-24 11:32:27 +0000
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-02-24 11:32:27 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/exchange" for 127.0.0.1 at 2017-02-24 11:32:27 +0000
+Processing by BitcoinController#exchange as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.56ms)
+Completed 200 OK in 88ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 11:56:09 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>9, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"35u16vvpypMFVu6jwueHzQRQtquokETsCJ", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"1387e57e28450c6fbdec3fd4f8c1f14244f02ed3f234cedc24416bde0de05516", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487936672, "transaction"=>{"created_at"=>1487936672}}
+  [1m[36mTransaction Load (1.6ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "35u16vvpypMFVu6jwueHzQRQtquokETsCJ"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_25: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 11:56:09 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>12, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"8e78e629107a4e5da21d8daff3dfd23bfb14fdc12dd90209f679e0babd350b38", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487936672, "transaction"=>{"created_at"=>1487936672}}
+  [1m[36mTransaction Load (2.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "36g4FoxtUvL4ZWTER5uHihcMqqcv6Vp2cs"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_26: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 11:56:09 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>2, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND", "balance_change"=>"0.00107461", "amount_sent"=>"0.00000000", "amount_received"=>"0.00107461", "txid"=>"3ac3f87e9048922f32f2827e68b4765caea2e5286b2299c38a9a61efa9f0e091", "confirmations"=>3, "is_green"=>false}, "created_at"=>1487936672, "transaction"=>{"created_at"=>1487936672}}
+  [1m[36mTransaction Load (1.7ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "3P2VLNaCHEhr5MWBUjf3TehHfeUFZZH9ND"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_27: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 7ms (Views: 1.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/transactions" for 127.0.0.1 at 2017-02-24 12:02:32 +0000
+Processing by TransactionsController#create as HTML
+  Parameters: {"recipient_url"=>"https://api.spotify.com/v1/artists/2p1fiYHYiXz9qi0JJyxBzN", "recipient_name"=>"Skepta", "recipient_img"=>"https://i.scdn.co/image/47eb61006132872c194ca0d3090bddb6acb10b85", "email"=>"charlie.gavins@neonseed.com", "payment_status"=>"pending", "amount"=>1064214.7159610924, "message"=>"You were great at Glastonbury wa gwan", "transaction"=>{"message"=>"You were great at Glastonbury wa gwan", "amount"=>1064214.7159610924, "payment_status"=>"pending", "recipient_url"=>"https://api.spotify.com/v1/artists/2p1fiYHYiXz9qi0JJyxBzN", "recipient_name"=>"Skepta", "recipient_img"=>"https://i.scdn.co/image/47eb61006132872c194ca0d3090bddb6acb10b85", "email"=>"charlie.gavins@neonseed.com"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "transactions" ("message", "amount", "payment_status", "recipient_url", "recipient_name", "recipient_img", "wallet_address", "email", "qr_image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["message", "You were great at Glastonbury wa gwan"], ["amount", 1064214], ["payment_status", "pending"], ["recipient_url", "https://api.spotify.com/v1/artists/2p1fiYHYiXz9qi0JJyxBzN"], ["recipient_name", "Skepta"], ["recipient_img", "https://i.scdn.co/image/47eb61006132872c194ca0d3090bddb6acb10b85"], ["wallet_address", "39CEvuSw7YYDPWdTxpikDh2CgzfeFTmEWe"], ["email", "charlie.gavins@neonseed.com"], ["qr_image_url", "https://chart.googleapis.com/chart?chs=300x300&chld=L|2&cht=qr&chl=bitcoin:39CEvuSw7YYDPWdTxpikDh2CgzfeFTmEWe?amount=0.01064214%26label=tipjar.com%26message=You were great at Glastonbury wa gwan"], ["created_at", 2017-02-24 12:02:32 UTC], ["updated_at", 2017-02-24 12:02:32 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered TransactionSerializer with ActiveModelSerializers::Adapter::Attributes (1.25ms)
+Completed 201 Created in 743ms (Views: 3.3ms | ActiveRecord: 4.1ms)
+
+
+  [1m[36mTransaction Load (2.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+TransactionsChannel is transmitting the subscription confirmation
+TransactionsChannel is streaming from transactions_channel_28
+Started POST "/transactions/webhook" for 45.56.79.5 at 2017-02-24 12:04:27 +0000
+Processing by TransactionsController#webhook as TEXT
+  Parameters: {"notification_id"=>"2758d8ca73f6e258b8e0bde1", "delivery_attempt"=>1, "type"=>"address", "data"=>{"network"=>"BTC", "address"=>"39CEvuSw7YYDPWdTxpikDh2CgzfeFTmEWe", "balance_change"=>"0.01064214", "amount_sent"=>"0.00000000", "amount_received"=>"0.01064214", "txid"=>"850cfb9ab31edaab3ec0fc6e6871a6b8dcfc56a4b7021f69b63911f3465bb52a", "confirmations"=>0, "is_green"=>false}, "created_at"=>1487937866, "transaction"=>{"created_at"=>1487937866}}
+  [1m[36mTransaction Load (1.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."wallet_address" = $1 ORDER BY "transactions"."id" DESC LIMIT $2[0m  [["wallet_address", "39CEvuSw7YYDPWdTxpikDh2CgzfeFTmEWe"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "transactions" SET "payment_status" = $1, "updated_at" = $2 WHERE "transactions"."id" = $3[0m  [["payment_status", "complete"], ["updated_at", 2017-02-24 12:04:27 UTC], ["id", 28]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to transactions_channel_28: {:payment_status=>"complete"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 3.4ms)
+
+
+TransactionsChannel transmitting {"payment_status"=>"complete"} (via streamed from transactions_channel_28)
