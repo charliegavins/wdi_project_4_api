@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: [:show, :update, :destroy, :create]
-  skip_before_action :authenticate_user!, only: [:webhook]
+  skip_before_action :authenticate_user!, only: [:webhook, :create]
 
   # GET /transactions
   def index
