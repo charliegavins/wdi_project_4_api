@@ -28,8 +28,10 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain
   config.action_cable.mount_path
-  config.action_cable.url = '*'
-  config.action_cable.allowed_request_origins = [ '*' ]
+  config.action_cable.url = 'https://bitip-client.herokuapp.com
+'
+  config.action_cable.allowed_request_origins = [ 'https://bitip-client.herokuapp.com
+' ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
