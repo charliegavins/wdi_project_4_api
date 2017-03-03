@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://bitip-api.herokuapp.com
+  # url: redis://bitip-api.herokuapp.com

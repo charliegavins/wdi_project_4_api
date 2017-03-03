@@ -28,7 +28,7 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain
   config.action_cable.mount_path
-  config.action_cable.url = 'https://bitip-client.herokuapp.com
+  config.action_cable.url = 'https://bitip-api.herokuapp.com
 '
   config.action_cable.allowed_request_origins = [ 'https://bitip-client.herokuapp.com
 ' ]
