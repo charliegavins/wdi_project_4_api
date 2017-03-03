@@ -1,5 +1,5 @@
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: [:show, :update, :destroy]
+  before_action :set_transaction, only: [:show, :update, :destroy, :create]
   skip_before_action :authenticate_user!, only: [:webhook]
 
   # GET /transactions
