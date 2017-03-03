@@ -9,16 +9,16 @@ require_relative '../config/boot'
 
 require 'rails/commands/server'
 
-
-module DefaultOptions
-
-  def default_options
-
-    super.merge!(Port: 4000) if Rails.env.development?
-
-  end
-
-end
+# 
+# module DefaultOptions
+#
+#   def default_options
+#
+#     super.merge!(Port: 4000) if Rails.env.development?
+#
+#   end
+#
+# end
 
 
 Rails::Server.send(:prepend, DefaultOptions)
