@@ -27,8 +27,8 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Mount Action Cable outside main process or domain
-  config.action_cable.mount_path
-  config.action_cable.url = 'wss://bitip-api.herokuapp.com/cable
+  config.action_cable.mount_path = '/cable'
+  config.action_cable.url = 'wss://bitip-api.herokuapp.com
 '
   config.action_cable.allowed_request_origins = [ 'https://bitip-client.herokuapp.com
 ' ]
