@@ -45,11 +45,11 @@ class TransactionsController < ApplicationController
   end
 
   def webhook
-    wallet_address = params[:data][:address]
-    p wallet_address
-    @transaction = Transaction.where(wallet_address: wallet_address).last
-    if @transaction
-      @transaction.update!(payment_status: "complete")
+    # wallet_address = params[:data][:address]
+    # p wallet_address
+    # @transaction = Transaction.where(wallet_address: wallet_address).last
+    # if @transaction
+    #   @transaction.update!(payment_status: "complete")
       render json: { status: 200 }
     else
       render json: { status: 404 }

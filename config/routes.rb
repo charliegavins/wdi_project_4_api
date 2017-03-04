@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :users
   get 'address', to: 'bitcoin#generate_address'
   get 'exchange', to: 'bitcoin#exchange'
-  post '/', to: 'transactions#webhook'
+  # post '/', to: 'transactions#webhook'
   post 'register', to: 'authentications#register'
   post 'login', to: 'authentications#login'
   mount ActionCable.server => '/cable'
