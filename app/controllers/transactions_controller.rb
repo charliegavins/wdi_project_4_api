@@ -51,9 +51,9 @@ class TransactionsController < ApplicationController
     # if @transaction
     #   @transaction.update!(payment_status: "complete")
       render json: { status: 200 }
-    else
-      render json: { status: 404 }
-    end
+    # else
+    #   render json: { status: 404 }
+    # end
   end
 
   private
