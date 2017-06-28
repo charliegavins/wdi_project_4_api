@@ -1,9 +1,9 @@
 class SpotifyController < ApplicationController
   skip_before_action :authenticate_user!
 
-  def initialize
-    get_token
-  end
+  # def initialize
+  #   get_token
+  # end
 
   def get_token
     response = Unirest.post "https://accounts.spotify.com/api/token",
