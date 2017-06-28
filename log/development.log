@@ -21907,3 +21907,1747 @@ Filter chain halted as :authenticate_user! rendered or redirected
 Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 4.5ms)
 
 
+Started GET "/exchange" for 127.0.0.1 at 2017-06-28 11:27:24 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BitcoinController#exchange as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.63ms)
+Completed 200 OK in 295ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/address" for 127.0.0.1 at 2017-06-28 11:28:03 +0100
+Processing by BitcoinController#generate_address as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 1019ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:41:54 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined method `skip_before_action' for main:Object):
+  
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:42:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined method `skip_before_action' for main:Object):
+  
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:43:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined method `skip_before_action' for main:Object):
+  
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:46:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined method `skip_before_action' for main:Object):
+  
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:47:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:48:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (unknown keyword: body):
+  
+app/controllers/spotify_controller.rb:5:in `token'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:49:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 313ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:51:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 256ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:52:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 207ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:55:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 260ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:56:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 283ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 11:57:08 +0100
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 249ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:27:08 +0100
+Processing by SpotifyController#token as */*
+Completed 500 Internal Server Error in 42974ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/spotify_controller.rb:5:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:29:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 500 Internal Server Error in 45395ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/spotify_controller.rb:5:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+app/controllers/application_controller.rb:21:in `id_found?'
+app/controllers/application_controller.rb:13:in `current_user'
+app/controllers/spotify_controller.rb:10:in `token'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:31:20 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 601ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:31:35 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 217ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:32:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed   in 3987ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/exchange" for 127.0.0.1 at 2017-06-28 12:34:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BitcoinController#exchange as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.45ms)
+Completed 200 OK in 301ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:36:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed   in 17158ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:37:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed   in 38446ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:39:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed   in 40793ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:39:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed 204 No Content in 220ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 12:42:57 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#token as */*
+Completed   in 4785ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/spotify_search" for 127.0.0.1 at 2017-06-28 13:25:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+AbstractController::ActionNotFound (The action 'search' could not be found for SpotifyController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/spotify_search" for 127.0.0.1 at 2017-06-28 13:25:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/spotify_search" for 127.0.0.1 at 2017-06-28 13:25:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `data' for #<ActionController::Parameters:0x007fdbe21aad90>):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started POST "/spotify_search" for 127.0.0.1 at 2017-06-28 13:25:54 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `body' for #<ActionController::Parameters:0x007fdf810f4250>):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started POST "/spotify_search" for 127.0.0.1 at 2017-06-28 13:27:03 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"_json"=>"gorillaz", "spotify"=>{"_json"=>"gorillaz"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `body' for #<ActionController::Parameters:0x007fdf838da0d0>):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started POST "/spotify_search" for 127.0.0.1 at 2017-06-28 13:27:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"_json"=>"gorillaz", "spotify"=>{"_json"=>"gorillaz"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `_json' for #<ActionController::Parameters:0x007f901a86e7f8>
+Did you mean?  as_json):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started POST "/spotify_search" for 127.0.0.1 at 2017-06-28 13:32:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"_json"=>"gorillaz", "spotify"=>{"_json"=>"gorillaz"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `data' for #<ActionController::Parameters:0x007fc90aa07c80>):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started GET "/spotify_search" for 127.0.0.1 at 2017-06-28 13:35:39 +0100
+Started GET "/spotify_search" for 127.0.0.1 at 2017-06-28 13:35:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"spotify"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `data' for #<ActionController::Parameters:0x007fa6ff9730a8>):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started GET "/spotify_search" for 127.0.0.1 at 2017-06-28 13:36:16 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"spotify"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `searchItem' for #<ActionController::Parameters:0x007f8fd55a12b8>):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started GET "/spotify_search" for 127.0.0.1 at 2017-06-28 13:36:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"spotify"=>{}}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?name=gorillaz" for 127.0.0.1 at 2017-06-28 13:37:25 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"name"=>"gorillaz", "spotify"=>{}}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?name=gorillaz" for 127.0.0.1 at 2017-06-28 13:37:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"name"=>"gorillaz", "spotify"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `name' for #<ActionController::Parameters:0x007fbbf109c158>):
+  
+app/controllers/spotify_controller.rb:17:in `search'
+Started GET "/spotify_search?name=gorillaz" for 127.0.0.1 at 2017-06-28 13:39:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"name"=>"gorillaz", "spotify"=>{}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 13:39:30 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 13:57:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined method `get_token' for SpotifyController:Class):
+  
+app/controllers/spotify_controller.rb:16:in `<class:SpotifyController>'
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 13:59:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined method `get_token' for SpotifyController:Class):
+  
+app/controllers/spotify_controller.rb:16:in `<class:SpotifyController>'
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 14:01:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.97ms)
+Completed 200 OK in 259ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 14:03:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 14:06:15 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined local variable or method `get_token' for SpotifyController:Class):
+  
+app/controllers/spotify_controller.rb:16:in `<class:SpotifyController>'
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:39:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#get_token as */*
+Completed 204 No Content in 325ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:39:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#get_token as */*
+Completed 204 No Content in 271ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:40:20 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:40:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#get_token as */*
+Completed 204 No Content in 240ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:40:49 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:42:58 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (undefined local variable or method `token' for SpotifyController:Class):
+  
+app/controllers/spotify_controller.rb:4:in `<class:SpotifyController>'
+app/controllers/spotify_controller.rb:1:in `<top (required)>'
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:45:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#get_token as */*
+Completed 204 No Content in 287ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:45:53 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:46:31 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#get_token as */*
+Completed 204 No Content in 217ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:46:34 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.14ms)
+Completed 200 OK in 314ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:47:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#get_token as */*
+Completed 204 No Content in 217ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:47:31 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Unirest::HttpResponse (9.85ms)
+Completed 200 OK in 251ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:48:31 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#get_token as */*
+Completed 204 No Content in 384ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:48:34 +0100
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.35ms)
+Completed 200 OK in 306ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_token" for 127.0.0.1 at 2017-06-28 15:51:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+AbstractController::ActionNotFound (The action 'get_token' could not be found for SpotifyController):
+  
+actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:54:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.5ms)
+Completed 200 OK in 345ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:55:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.96ms)
+Completed 200 OK in 235ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:55:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.28ms)
+Completed 200 OK in 253ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spotify_search?search=gorillaz" for 127.0.0.1 at 2017-06-28 15:55:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SpotifyController#search as */*
+  Parameters: {"search"=>"gorillaz", "spotify"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.41ms)
+Completed 200 OK in 279ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
